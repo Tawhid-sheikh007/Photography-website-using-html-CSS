@@ -327,3 +327,114 @@ header{
 .about-right p{
     font-size: 13px;
 }
+/* ==========ABOUT ENDED========= */
+/* ==============GALLERY START======== */
+#gallery{
+    margin-top: 15rem;
+}
+.gallery-head h2{
+    margin-bottom: 2rem;
+}
+.gallery-head p{
+    width: 50%;
+    margin-bottom: 3rem;
+}
+.gallery-images{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    place-items: center;
+}
+.gallery-image{
+    width: 22rem;
+    height: 28rem;
+    overflow: hidden;
+    border: 1rem solid var(--color-bg-4);
+    
+}
+.gallery-image img{
+    width: 22rem;
+    height: 28rem;
+    filter: saturate(0) brightness(0.5);
+    transition: var(--transition);
+}
+.gallery-image:hover img{
+    filter: saturate(1) brightness(1);
+}
+/* ==============GALLERY ENDED======== */
+/* ==============COLLAGE STARTS========== */
+#collage{
+    margin-top: 15rem;
+}
+.collage-head{
+    text-align: right;
+}
+.collage-head h2{
+    margin-bottom: 2rem;
+}
+.collage-head p{
+    padding-left:50% ;
+    margin-bottom: 5rem;
+}
+.collage-images{
+    display: grid;
+    grid-template-areas: 
+    "c1 c2 ch "
+    "cV cV ch"
+    "cV cV ch"
+    "c3 c4 c5";
+    gap: 2rem;
+}
+
+.collage-image:nth-child(1){
+    grid-area: c1;
+}
+
+.collage-image:nth-child(2){
+    grid-area: c2;
+}
+
+.collage-image:nth-child(3){
+    grid-area: c3;
+}
+
+.collage-imag:nth-child(4){
+    grid-area: c4;
+}
+
+.collage-image:nth-child(5){
+    grid-area: c5;
+}
+
+.collage-image:nth-child(6){
+    grid-area: ch;
+}
+
+.collage-image:nth-child(7){
+    grid-area: cV;
+}
+.collage-image{
+    border: 1rem solid var(--color-bg-4);
+}
+.collage-image img{
+    height: 100%;
+    filter: saturate(0) brightness(0.5);
+    transition: var(--transition);
+}
+.collage-image:hover img{
+    filter: saturate(1) brightness(1);
+}
+
+/* =========FOOTER======== */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-bg-1);
+}
+footer a span{
+    color: #02eeff;
+    text-decoration: underline;
+}
