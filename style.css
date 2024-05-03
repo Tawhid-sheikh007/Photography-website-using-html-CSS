@@ -153,4 +153,110 @@ header{
     display: grid;
     grid-template-columns: 53% 43%;
     gap:4%;
+    margin-top: 8rem;
+    position: relative;
+    /* background-color: aqua; */
+    /* height: 100vh; */
+}
+.header-left{
+    /* background-color: red; */
+}
+.header-hashtag{
+    color: var(--color-primary-variant);
+}
+.header-left h1{
+    font-size: 45px;
+    margin-top: 1.2rem;
+    font-weight: 500;
+}
+.header-left p{
+    margin-top: 2rem;
+    width: 85%;
+}
+
+.header-btn{
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: var(--color-primary-variant);
+    color: var(--color-bg-4);
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    border-radius: 2rem;
+}
+.header-btn:hover{
+    color: var(--color-light);
+    background-color: var(--color-bg-4);
+}
+.header-btn:active{
+    outline: 0.5rem solid var(--color-light);
+}
+.header-right{
+    /* background-color: red; */
+    height: 28rem;
+}
+.header-image-bg{
+    background-color: var(--color-bg-4);
+    height: 18rem;
+    width: 12rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.header-image-lg{
+    width: 22rem;
+    height: 28rem;
+    overflow: hidden;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    filter: saturate(0) brightness(0.5);
+    transition: var(--transition);
+}
+.header-image-lg img{
+    overflow: hidden;
+    height: 28rem;
+    width: 22rem;
+}
+.header-image-md{
+    width: 18rem;
+    height: 18rem;
+    overflow: hidden;
+    position: absolute;
+    top: 8rem;
+    right: 8rem;
+}
+.header-right:hover .header-image-md{
+    opacity: 0;
+}
+.header-right:hover .header-image-lg{
+    filter: saturate(1) brightness(1);
+    border: 1rem solid var(--color-bg-4);
+    top: 0;
+    right: 0;
+}
+.header-frames{
+    position: absolute;
+    top:75vh;
+    left: 20rem;
+}
+.header-frame{
+    width: 15rem;
+    border: 0.5rem solid var(--color-bg-3);
+    box-shadow: 0 0 5rem rgba(0 0 0 / 0.5);
+    position: absolute;
+    transform: rotate(-10deg);
+    transform-origin: bottom left;
+    transition: var(--transition);
+}
+.header-frame:nth-child(2){
+    transform: rotate(20deg);
+    top: -1rem;
+    left: -1rem;
+}
+.header-frames:hover .header-frame{
+    transform: rotate(0);
+}
+.header-frames:hover .header-frame:nth-child(2){
+    top:0;
+    left:16rem;
 }
