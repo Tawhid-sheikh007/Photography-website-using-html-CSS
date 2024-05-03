@@ -260,3 +260,70 @@ header{
     top:0;
     left:16rem;
 }
+/* ==================HEADER ENDED=============== */
+/* ================ABOUT STARTS================= */
+#about{
+    margin-top: 20rem;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: 43% 53%;
+    gap: 4%;
+}
+.about-left{
+    position: relative;
+    height: 28rem;
+}
+.about-image-bg{
+    background-color: var(--color-bg-4);
+    height: 18rem;
+    width: 12rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.about-image-lg{
+    width: 22rem;
+    height: 28rem;
+    overflow: hidden;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    filter: saturate(0) brightness(0.5);
+    transition: var(--transition);
+}
+.about-image-lg img{
+    width: 22rem;
+    height: 28rem;
+}
+.about-image-md{
+    width: 15rem;
+    height: 18rem;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5rem;
+    left: 10rem;
+}
+.about-image-md img{
+    width: 15rem;
+    height: 18rem;
+}
+.about-left:hover .about-image-md{
+    opacity: 0;
+}
+.about-left:hover .about-image-lg{
+    filter: saturate(1) brightness(1);
+    border: 1rem solid var(--color-bg-4);
+    left: 0;
+    bottom: 0;
+}
+.about-title{
+    margin-bottom: 1.5rem;
+    font-size: 45px;
+}
+.about-title span{
+    color: var(--color-primary);
+}
+.about-right p{
+    font-size: 13px;
+}
